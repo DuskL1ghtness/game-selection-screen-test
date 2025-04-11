@@ -13,8 +13,13 @@ body, html {
   height: 100%;
   background: black no-repeat center center;
   background-size: cover;
-  transition: background-image 0.5s ease;
+  opacity: 0;
+  transition: opacity 1s ease, background-image 0.3s ease;
   z-index: -1;
+}
+
+#background.active {
+  opacity: 1;
 }
 
 .game-icons {
