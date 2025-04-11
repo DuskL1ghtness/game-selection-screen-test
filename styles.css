@@ -30,13 +30,27 @@ body, html {
   gap: 20px;
 }
 
-.game-icon {
-  width: 150px;
-  height: 150px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+.game-item {
+  position: relative;
+  text-align: center;
 }
 
-.game-icon:hover {
-  transform: scale(1.1);
+.label {
+  position: absolute;
+  top: -30px; /* Hidden above */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.game-item:hover .label {
+  top: 160px; /* Slide down below the icon */
+  opacity: 1;
 }
