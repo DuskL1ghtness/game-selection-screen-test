@@ -6,7 +6,7 @@ const audio = document.getElementById('bg-music');
 let currentTrack = null;
 let fadeInterval = null;
 
-function fadeAudio(toVolume, speed = 0.25) {
+function fadeAudio(toVolume, speed = 0.3) {
   clearInterval(fadeInterval);
   fadeInterval = setInterval(() => {
     if (Math.abs(audio.volume - toVolume) < speed) {
