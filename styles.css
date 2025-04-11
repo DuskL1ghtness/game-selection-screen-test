@@ -24,11 +24,10 @@ body, html {
 
 .game-icons {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20px;
+  left: 20px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .game-icon {
