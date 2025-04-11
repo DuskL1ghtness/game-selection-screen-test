@@ -1,3 +1,4 @@
+
 const icons = document.querySelectorAll('.game-icon');
 const background = document.getElementById('background');
 const audio = document.getElementById('bg-music');
@@ -5,7 +6,7 @@ const audio = document.getElementById('bg-music');
 let currentTrack = null;
 let fadeInterval = null;
 
-function fadeAudio(toVolume, speed = 0.01) {
+function fadeAudio(toVolume, speed = 0.25) {
   clearInterval(fadeInterval);
   fadeInterval = setInterval(() => {
     if (Math.abs(audio.volume - toVolume) < speed) {
@@ -51,3 +52,4 @@ icons.forEach(icon => {
     currentTrack = null;
   });
 });
+// JavaScript Document
