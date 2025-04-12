@@ -22,6 +22,18 @@ body, html {
   opacity: 1;
 }
 
+.header-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.6); /* black with 60% opacity */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
 .game-icons {
   position: absolute;
   top: 20px;
@@ -53,4 +65,19 @@ body, html {
 .game-item:hover .label {
   top: 160px; /* Slide down below the icon */
   opacity: 1;
+}
+
+.game-icon {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease, outline 0.2s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.game-icon:hover {
+  transform: scale(1.1);
+  outline: 3px solid white;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px; /* optional if your icons are rounded */
 }
