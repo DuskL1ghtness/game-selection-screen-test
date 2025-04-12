@@ -22,6 +22,17 @@ body, html {
   opacity: 1;
 }
 
+.game-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* transparent black */
+  box-sizing: border-box;
+  z-index: 1;
+}
+
 .game-icon {
   width: 150px;
   height: 150px;
