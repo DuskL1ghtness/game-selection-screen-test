@@ -22,6 +22,20 @@ body, html {
   opacity: 1;
 }
 
+.game-icon {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease, outline 0.2s ease;
+  border-radius: 10px;
+}
+
+.game-icon:hover {
+  transform: scale(1.1);
+  outline: 4px solid white;
+  outline-offset: -4px;
+}
+
 .game-icons {
   position: absolute;
   top: 20px;
